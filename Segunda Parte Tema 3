@@ -1,0 +1,28 @@
+type
+  Coche = class
+    private
+      num_puertas: Integer;
+    public
+      constructor Create;
+      procedure agregar_puerta;
+  end;
+
+constructor Coche.Create;
+begin
+  num_puertas := 0;
+end;
+
+procedure Coche.agregar_puerta;
+begin
+  Inc(num_puertas);
+end;
+
+// Creamos un objeto Coche y le añadimos una puerta
+var miCoche: Coche;
+begin
+  miCoche := Coche.Create;
+  miCoche.agregar_puerta;
+
+  // Mostramos el número de puertas que tiene el objeto
+  writeln(miCoche.num_puertas);  // Salida: 1
+end.
