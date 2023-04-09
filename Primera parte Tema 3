@@ -1,0 +1,7 @@
+function sumar_numeros(num1, num2, num3: Integer): Integer;
+begin
+  Result := num1 + num2 + num3;
+end;
+
+// Llamamos a la función y le damos valores
+writeln(sumar_numeros(5, 10, 15)); // Salida: 30
